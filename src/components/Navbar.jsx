@@ -23,7 +23,7 @@ const Navbar = () => {
             <FaRobot className="text-4xl text-primary-600" />
             <div>
               <span className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">
-                Futureminds AI Academy
+                Futureminds AI Labs
               </span>
               <span className="block text-xs text-gray-500">Training & Placement</span>
             </div>

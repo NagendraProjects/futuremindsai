@@ -38,8 +38,8 @@ const Contact = () => {
         <div className="container-custom">
           <div className="grid md:grid-cols-4 gap-6 -mt-24">
             {[
-              { icon: <FaPhone />, title: 'Call Us', info: '+91 8919609488 / 9035103449', desc: 'Mon-Fri 9am-8pm' },
-              { icon: <FaEnvelope />, title: 'Email Us', info: 'info@futureminds-ai.com', desc: '24/7 Support' },
+              { icon: <FaPhone />, title: 'Call Us', info: '+91 9606636714 / 9597018187', desc: 'Mon-Fri 9am-8pm' },
+              { icon: <FaEnvelope />, title: 'Email Us', info: 'futuremindsailabs@gmail.com', desc: '24/7 Support' },
               { icon: <FaMapMarkerAlt />, title: 'Visit Us', info: 'Marathahalli, Bangalore, India', desc: 'Book appointment' },
               { icon: <FaClock />, title: 'Quick Response', info: 'Within 1 hour', desc: 'Guaranteed' }
             ].map((item, index) => (
@@ -120,10 +120,11 @@ const Contact = () => {
                   >
                     <option value="">Select a course</option>
                     <option value="full-stack-ai">Full Stack AI Development</option>
-                    <option value="azure-devops">Azure DevOps</option>
-                    <option value="graphql">GraphQL Mastery</option>
-                    <option value="cloud">Cloud Computing</option>
+                    <option value="azure-devops">Azure/AWS DevOps</option>
+                    <option value="graphql">MERN/MEAN</option>
+                    <option value="genai">Generative AI & Agentic AI</option>
                     <option value="data-science">Data Science & ML</option>
+                    <option value="testing">Software Testing & QA</option>
                   </select>
                 </div>
 
@@ -155,7 +156,7 @@ const Contact = () => {
                 <h3 className="text-2xl font-bold mb-4">Visit Our Campus</h3>
                 <div className="aspect-w-16 aspect-h-9 mb-4">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.636253370913!2d-122.08409568468898!3d37.42206597982554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba024d9a8fbb%3A0x6c3c5c5d5c5c5c5c!2sGoogleplex!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.262624964857!2d77.7042!3d12.9512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13e2e2e2e2e2%3A0x2e2e2e2e2e2e2e2e!2s12th%20Cross%20Rd%2C%20CKB%20Layout%2C%20Kasavanahalli%20Village%2C%20Marathahalli%2C%20Bengaluru%2C%20Karnataka%20560037!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
                     width="100%"
                     height="300"
                     style={{ border: 0 }}

@@ -63,7 +63,7 @@ const Placement = () => {
             transition={{ delay: 0.2 }}
             className="text-xl text-primary-100 max-w-3xl mx-auto"
           >
-            We don't just teach, we ensure your career takes off. Join our alumni network of 100+ successful professionals.
+            We don't just teach, we ensure your career takes off. Join our alumni network of 500+ successful professionals.
           </motion.p>
         </div>
       </section>
@@ -75,7 +75,7 @@ const Placement = () => {
               { value: '95%', label: 'Placement Rate', icon: <FaChartLine /> },
               { value: '20+', label: 'Hiring Partners', icon: <FaUsers /> },
               { value: '25LPA', label: 'Highest Package', icon: <FaTrophy /> },
-              { value: '100+', label: 'Alumni Network', icon: <FaHandshake /> }
+              { value: '500+', label: 'Alumni Network', icon: <FaHandshake /> }
             ].map((stat, index) => (
               <motion.div
                 key={index}

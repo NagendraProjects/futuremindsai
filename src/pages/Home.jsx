@@ -5,20 +5,22 @@ import { SiAzuredevops, SiKubernetes, SiTensorflow, SiGraphql } from 'react-icon
 
 const Home = () => {
   const technologies = [
-    { icon: <FaReact />, name: 'React', color: 'text-blue-400' },
-    { icon: <FaNodeJs />, name: 'Node.js', color: 'text-green-600' },
-    { icon: <FaPython />, name: 'Python', color: 'text-yellow-600' },
-    { icon: <FaAws />, name: 'AWS', color: 'text-orange-500' },
-    { icon: <SiAzuredevops />, name: 'Azure', color: 'text-blue-600' },
-    { icon: <FaDocker />, name: 'Docker', color: 'text-blue-500' },
-    { icon: <SiKubernetes />, name: 'K8s', color: 'text-blue-700' },
-    { icon: <SiGraphql />, name: 'GraphQL', color: 'text-pink-600' },
-    { icon: <SiTensorflow />, name: 'TensorFlow', color: 'text-orange-600' },
-    { icon: <FaDatabase />, name: 'MongoDB', color: 'text-green-500' },
+    { icon: <SiTensorflow />, name: 'AI & ML', color: 'text-orange-600' },
+    { icon: <FaPython />, name: 'Data Science', color: 'text-yellow-600' },
+    { icon: <FaPython />, name: 'Python', color: 'text-blue-500' },
+    { icon: <FaAws />, name: 'AWS & Azure', color: 'text-orange-500' },
+    { icon: <FaNodeJs />, name: 'Full Stack', color: 'text-green-600' },
+    { icon: <FaReact />, name: 'React/Angular', color: 'text-blue-400' },
+    { icon: <FaDatabase />, name: 'MySQL/MongoDB', color: 'text-green-500' },
+    { icon: <SiGraphql />, name: 'LangChain', color: 'text-purple-600' },
+    { icon: <FaNodeJs />, name: 'FastAPI', color: 'text-teal-600' },
+    { icon: <FaNodeJs />, name: 'MERN/MEAN', color: 'text-green-700' },
+    { icon: <SiTensorflow />, name: 'Generative AI', color: 'text-pink-600' },
+    { icon: <SiTensorflow />, name: 'Agentic AI', color: 'text-indigo-600' },
   ];
 
   const stats = [
-    { label: 'Students Placed', value: '100+' },
+    { label: 'Students Placed', value: '500+' },
     { label: 'Partner Companies', value: '20+' },
     { label: 'Expert Trainers', value: '10+' },
     { label: 'Placement Rate', value: '95%' },
@@ -108,21 +110,37 @@ const Home = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {[
+            {
+            [
               {
-                title: 'Full Stack AI & ML',
-                desc: 'Master React, Node.js, Python, AI, and ML integration',
-                features: ['20+ Real Projects', 'Industry Mentors', 'Certification']
+                title: 'Data Science AI & ML',
+                desc: 'Learn Python, ML algorithms, Deep Learning, and NLP with hands-on projects.',
+                features: ['Industry Mentors', 'Certification', 'Real Projects']
               },
               {
-                title: 'Azure DevOps',
-                desc: 'Complete Azure certification preparation with hands-on',
-                features: ['AZ-900, AZ-104', 'CI/CD Pipelines', 'Infrastructure as Code']
+                title: 'Full Stack with AI',
+                desc: 'Master React, Node.js, Python, and integrate AI into full stack applications.',
+                features: ['AI Integration', 'Full Stack Projects', 'Placement Assistance']
               },
               {
-                title: 'GraphQL Mastery',
-                desc: 'Build modern APIs with GraphQL, Apollo, and Prisma',
-                features: ['Apollo Server/Client', 'Real-time Subscriptions', 'Federation']
+                title: 'Testing with Selenium & Playwright',
+                desc: 'Automate testing using Selenium, Playwright, and CI/CD pipelines.',
+                features: ['Selenium', 'Playwright', 'CI/CD Automation']
+              },
+              {
+                title: 'Data Engineering',
+                desc: 'Build ETL pipelines, work with Big Data, Spark, and Data Warehousing.',
+                features: ['ETL', 'Big Data', 'Spark', 'Data Warehousing']
+              },
+              {
+                title: 'AWS & Azure DevOps',
+                desc: 'Master cloud platforms, DevOps pipelines, and infrastructure automation.',
+                features: ['AWS', 'Azure', 'CI/CD', 'Infrastructure as Code']
+              },
+              {
+                title: 'Generative AI, Agentic AI & MCP',
+                desc: 'Explore advanced AI concepts, generative models, agentic systems, and Model Context Protocol.',
+                features: ['Generative AI', 'Agentic AI', 'MCP', 'Real-world Projects']
               }
             ].map((course, index) => (
               <motion.div

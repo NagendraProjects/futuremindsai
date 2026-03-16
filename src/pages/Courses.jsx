@@ -6,53 +6,48 @@ const Courses = () => {
   const courses = [
     {
       id: 1,
+      title: 'Data Science AI & ML',
+      duration: '6 Months',
+      students: '190+',
+      rating: 4.8,
+      topics: ['Python', 'Statistics', 'ML Algorithms', 'Deep Learning', 'NLP'],
+      level: 'Intermediate'
+    },
+    {
+      id: 2,
       title: 'Full Stack AI Development',
       duration: '6 Months',
       students: '250+',
       rating: 4.9,
-      price: '9999',
       topics: ['React', 'Node.js', 'Python', 'TensorFlow', 'MongoDB', 'AWS'],
       level: 'Beginner to Advanced'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Azure DevOps Engineer',
       duration: '4 Months',
       students: '180+',
       rating: 4.8,
-      price: '9999',
       topics: ['Azure Services', 'CI/CD', 'Kubernetes', 'Terraform', 'Monitoring'],
       level: 'Intermediate'
     },
     {
-      id: 3,
+      id: 4,
       title: 'GraphQL Masterclass',
       duration: '3 Months',
       students: '150+',
       rating: 4.9,
-      price: '9999',
       topics: ['Apollo', 'Prisma', 'Subscriptions', 'Federation', 'Security'],
       level: 'All Levels'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Cloud Computing (AWS/Azure)',
       duration: '5 Months',
       students: '200+',
       rating: 4.7,
-      price: '9999',
       topics: ['AWS', 'Azure', 'Serverless', 'Microservices', 'DevOps'],
       level: 'Beginner to Advanced'
-    },
-    {
-      id: 5,
-      title: 'Data Science & ML',
-      duration: '6 Months',
-      students: '190+',
-      rating: 4.8,
-      price: '9999',
-      topics: ['Python', 'Statistics', 'ML Algorithms', 'Deep Learning', 'NLP'],
-      level: 'Intermediate'
     },
     {
       id: 6,
@@ -60,10 +55,27 @@ const Courses = () => {
       duration: '4 Months',
       students: '300+',
       rating: 4.9,
-      price: '9999',
       topics: ['MongoDB', 'Express', 'React', 'Node.js', 'Redux'],
       level: 'All Levels'
-    }
+    },
+      {
+        id: 7,
+        title: 'Automation Testing with Selenium & Playwright',
+        duration: '3 Months',
+        students: '120+',
+        rating: 4.8,
+        topics: ['Selenium', 'Playwright', 'JavaScript', 'Test Automation', 'CI/CD'],
+        level: 'All Levels'
+      },
+      {
+        id: 8,
+        title: 'Data Engineering',
+        duration: '5 Months',
+        students: '140+',
+        rating: 4.7,
+        topics: ['ETL', 'Big Data', 'Spark', 'Data Warehousing', 'Python'],
+        level: 'Intermediate'
+      },
   ];
 
   return (

@@ -4,12 +4,12 @@ import { SiGraphql } from 'react-icons/si';
 
 const MovingTicker = () => {
   const announcements = [
-    { icon: <FaGraduationCap />, text: "🚀 New Batch Starting: AI & ML Data Science - Feb 15th" },
-    { icon: <FaLaptopCode />, text: "💼 100% Placement Assistance - Limited Seats!" },
-    { icon: <FaCloud />, text: "☁️ Azure DevOps Certification Course - 30% Off" },
-    { icon: <SiGraphql />, text: "⚡ GraphQL Mastery Workshop - This Weekend" },
-    { icon: <FaUsers />, text: "🎓 Alumni Network: 100+ Placed in Top MNCs" },
-    { icon: <FaBriefcase />, text: "🏢 Interview Preparation Bootcamp - Starts Monday" },
+    { icon: <FaGraduationCap />, text: "🚀 New Batch Starting: AI & ML Data Science" },
+    { icon: <FaLaptopCode />, text: "💼 100% Placement Assistance!" },
+    { icon: <FaCloud />, text: "☁️ Cloud Computing & DevOps" },
+    { icon: <SiGraphql />, text: "⚡ Full Stack Mastery Workshop" },
+    { icon: <FaUsers />, text: "🎓 Alumni Network: 500+ Placed in Top MNCs" },
+    { icon: <FaBriefcase />, text: "🏢 Interview Preparation Bootcamp - Starts Every Monday" },
   ];
 
   return (

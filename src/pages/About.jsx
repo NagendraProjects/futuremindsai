@@ -7,7 +7,7 @@ const About = () => {
     { name: 'Mr Naresh G', role: 'Founder & AI & Full Stack Expert', exp: '13+ years' },
     { name: 'Thanuja P', role: 'QA Architect', exp: '10+ years' },
     { name: 'Satishkumar P', role: 'DevOps Architect', exp: '9+ years' },
-    { name: 'Kumar J', role: 'AI & Mobile Architect', exp: '18+ years' }
+    { name: 'Venkat Davuluri', role: 'Data Engineering & ML Expert', exp: '20+ years' }
   ];
 
   const values = [
@@ -64,9 +64,9 @@ const About = () => {
             >
               <h2 className="text-4xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-gray-700 mb-4">
-                Founded in 2024, FutureMinds AI Academy started with a simple idea: make quality tech education 
+                Founded in 2020, FutureMinds AI Labs started with a simple idea: make quality tech education 
                 accessible to everyone. What began as a small bootcamp has now grown into a premier 
-                training institution with over 100 successful placements.
+                training institution with over 500 successful placements.
               </p>
               <p className="text-lg text-gray-700 mb-6">
                 Our unique approach combines industry-aligned curriculum, hands-on projects, and 
@@ -74,7 +74,7 @@ const About = () => {
               </p>
               <div className="flex items-center space-x-8">
                 <div>
-                  <div className="text-3xl font-bold text-primary-600">100+</div>
+                  <div className="text-3xl font-bold text-primary-600">500+</div>
                   <div className="text-gray-600">Students Placed</div>
                 </div>
                 <div>
