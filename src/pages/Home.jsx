@@ -10,13 +10,14 @@ const Home = () => {
     { icon: <FaPython />, name: 'Python', color: 'text-blue-500' },
     { icon: <FaAws />, name: 'AWS & Azure', color: 'text-orange-500' },
     { icon: <FaNodeJs />, name: 'Full Stack', color: 'text-green-600' },
-    { icon: <FaReact />, name: 'React/Angular', color: 'text-blue-400' },
-    { icon: <FaDatabase />, name: 'MySQL/MongoDB', color: 'text-green-500' },
+    { icon: <FaReact />, name: 'React', color: 'text-blue-400' },
+    { icon: <FaDatabase />, name: 'Any DB', color: 'text-green-500' },
     { icon: <SiGraphql />, name: 'LangChain', color: 'text-purple-600' },
     { icon: <FaNodeJs />, name: 'FastAPI', color: 'text-teal-600' },
     { icon: <FaNodeJs />, name: 'MERN/MEAN', color: 'text-green-700' },
     { icon: <SiTensorflow />, name: 'Generative AI', color: 'text-pink-600' },
     { icon: <SiTensorflow />, name: 'Agentic AI', color: 'text-indigo-600' },
+    { icon: <FaDatabase />, name: 'Data Engineering', color: 'text-cyan-700' },
   ];
 
   const stats = [
@@ -44,7 +45,7 @@ const Home = () => {
                 <br />With Industry Experts
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Comprehensive training program with 100% placement assistance. 
+                Comprehensive training program with 100% placement assistance.
                 Learn AI, ML, Full Stack, GraphQL, and Azure DevOps from scratch.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -108,61 +109,61 @@ const Home = () => {
               Designed by industry experts to make you job-ready from day one
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {
-            [
-              {
-                title: 'Data Science AI & ML',
-                desc: 'Learn Python, ML algorithms, Deep Learning, and NLP with hands-on projects.',
-                features: ['Industry Mentors', 'Certification', 'Real Projects']
-              },
-              {
-                title: 'Full Stack with AI',
-                desc: 'Master React, Node.js, Python, and integrate AI into full stack applications.',
-                features: ['AI Integration', 'Full Stack Projects', 'Placement Assistance']
-              },
-              {
-                title: 'Testing with Selenium & Playwright',
-                desc: 'Automate testing using Selenium, Playwright, and CI/CD pipelines.',
-                features: ['Selenium', 'Playwright', 'CI/CD Automation']
-              },
-              {
-                title: 'Data Engineering',
-                desc: 'Build ETL pipelines, work with Big Data, Spark, and Data Warehousing.',
-                features: ['ETL', 'Big Data', 'Spark', 'Data Warehousing']
-              },
-              {
-                title: 'AWS & Azure DevOps',
-                desc: 'Master cloud platforms, DevOps pipelines, and infrastructure automation.',
-                features: ['AWS', 'Azure', 'CI/CD', 'Infrastructure as Code']
-              },
-              {
-                title: 'Generative AI, Agentic AI & MCP',
-                desc: 'Explore advanced AI concepts, generative models, agentic systems, and Model Context Protocol.',
-                features: ['Generative AI', 'Agentic AI', 'MCP', 'Real-world Projects']
-              }
-            ].map((course, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ y: -10 }}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all"
-              >
-                <h3 className="text-2xl font-bold mb-4 text-primary-700">{course.title}</h3>
-                <p className="text-gray-600 mb-6">{course.desc}</p>
-                <ul className="space-y-2 mb-6">
-                  {course.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-gray-700">
-                      <span className="text-primary-500 mr-2">✓</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <Link to="/courses" className="text-primary-600 font-semibold hover:text-primary-700">
-                  Learn More →
-                </Link>
-              </motion.div>
-            ))}
+              [
+                {
+                  title: 'Data Science AI & ML',
+                  desc: 'Learn Python, ML algorithms, Deep Learning, and NLP with hands-on projects.',
+                  features: ['Industry Mentors', 'Certification', 'Real Projects']
+                },
+                {
+                  title: 'Full Stack with AI',
+                  desc: 'Master React, Node.js, Python, and integrate AI into full stack applications.',
+                  features: ['AI Integration', 'Full Stack Projects', 'Placement Assistance']
+                },
+                {
+                  title: 'Testing with Selenium & Playwright',
+                  desc: 'Automate testing using Selenium, Playwright, and CI/CD pipelines.',
+                  features: ['Selenium', 'Playwright', 'CI/CD Automation']
+                },
+                {
+                  title: 'Data Engineering',
+                  desc: 'Build ETL pipelines, work with Big Data, Spark, and Data Warehousing.',
+                  features: ['ETL', 'Big Data', 'Spark', 'Data Warehousing']
+                },
+                {
+                  title: 'AWS & Azure DevOps',
+                  desc: 'Master cloud platforms, DevOps pipelines, and infrastructure automation.',
+                  features: ['AWS', 'Azure', 'CI/CD', 'Infrastructure as Code']
+                },
+                {
+                  title: 'Generative AI, Agentic AI & MCP',
+                  desc: 'Explore advanced AI concepts, generative models, agentic systems, and Model Context Protocol.',
+                  features: ['Generative AI', 'Agentic AI', 'MCP', 'Real-world Projects']
+                }
+              ].map((course, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ y: -10 }}
+                  className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all"
+                >
+                  <h3 className="text-2xl font-bold mb-4 text-primary-700">{course.title}</h3>
+                  <p className="text-gray-600 mb-6">{course.desc}</p>
+                  <ul className="space-y-2 mb-6">
+                    {course.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-center text-gray-700">
+                        <span className="text-primary-500 mr-2">✓</span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <Link to="/courses" className="text-primary-600 font-semibold hover:text-primary-700">
+                    Learn More →
+                  </Link>
+                </motion.div>
+              ))}
           </div>
         </div>
       </section>

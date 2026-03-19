@@ -6,7 +6,7 @@ const About = () => {
     { name: 'Mr Nagendra Govindu', role: 'Founder & AI & ML Expert', exp: '10+ years' },
     { name: 'Mr Naresh G', role: 'Founder & AI & Full Stack Expert', exp: '13+ years' },
     { name: 'Thanuja P', role: 'QA Architect', exp: '10+ years' },
-    { name: 'Satishkumar P', role: 'DevOps Architect', exp: '9+ years' },
+    { name: 'Satishkumar Jagatha', role: 'DevOps Architect', exp: '13+ years' },
     { name: 'Venkat Davuluri', role: 'Data Engineering & ML Expert', exp: '20+ years' }
   ];
 
@@ -64,12 +64,12 @@ const About = () => {
             >
               <h2 className="text-4xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-gray-700 mb-4">
-                Founded in 2020, FutureMinds AI Labs started with a simple idea: make quality tech education 
-                accessible to everyone. What began as a small bootcamp has now grown into a premier 
+                Founded in 2020, FutureMinds AI Labs started with a simple idea: make quality tech education
+                accessible to everyone. What began as a small bootcamp has now grown into a premier
                 training institution with over 500 successful placements.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                Our unique approach combines industry-aligned curriculum, hands-on projects, and 
+                Our unique approach combines industry-aligned curriculum, hands-on projects, and
                 personalized mentorship to ensure our students are not just job-ready, but career-ready.
               </p>
               <div className="flex items-center space-x-8">

@@ -11,9 +11,32 @@ const Contact = () => {
     message: ''
   });
 
-  const handleSubmit = (e) => {
+  const API_BASE = "https://n2aiassistant-backend-cqccg2dmfcexcxdm.southindia-01.azurewebsites.net" || "http://localhost:8000";
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert('Thank you for contacting us! We will get back to you soon.');
+    try {
+      const response = await fetch(`${API_BASE}/post-enquiry`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        alert('Thank you for contacting us! We will get back to you soon.');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          course: '',
+          message: ''
+        });
+      } else {
+        alert('Failed to submit. Please try again later.');
+      }
+    } catch (error) {
+      alert('An error occurred. Please try again later.');
+    }
   };
 
   const handleChange = (e) => {
@@ -39,7 +62,7 @@ const Contact = () => {
           <div className="grid md:grid-cols-4 gap-6 -mt-24">
             {[
               { icon: <FaPhone />, title: 'Call Us', info: '+91 9606636714 / 9597018187', desc: 'Mon-Fri 9am-8pm' },
-              { icon: <FaEnvelope />, title: 'Email Us', info: 'futuremindsailabs@gmail.com', desc: '24/7 Support' },
+              { icon: <FaEnvelope />, title: 'Email Us', info: 'info@futuremindsailabs.com', desc: '24/7 Support' },
               { icon: <FaMapMarkerAlt />, title: 'Visit Us', info: 'Marathahalli, Bangalore, India', desc: 'Book appointment' },
               { icon: <FaClock />, title: 'Quick Response', info: 'Within 1 hour', desc: 'Guaranteed' }
             ].map((item, index) => (
@@ -82,7 +105,7 @@ const Contact = () => {
                     placeholder="John Doe"
                   />
                 </div>
-                
+
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-gray-700 font-semibold mb-2">Email *</label>

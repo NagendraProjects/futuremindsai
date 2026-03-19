@@ -68,7 +68,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3 text-gray-400">
                 <FaEnvelope className="text-primary-400" />
-                <span>futuremindsailabs@gmail.com</span>
+                <span>info@futuremindsailabs.com</span>
               </li>
             </ul>
           </div>
@@ -76,7 +76,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} FutureMinds AI Labs. All rights reserved. | 
+            © {new Date().getFullYear()} FutureMinds AI Labs. All rights reserved. |
             Training & Placement Division
           </p>
         </div>
