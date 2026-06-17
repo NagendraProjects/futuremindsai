@@ -1,15 +1,14 @@
 import { motion } from 'framer-motion';
-import { FaGraduationCap, FaLaptopCode, FaCloud, FaUsers, FaBriefcase } from 'react-icons/fa';
-import { SiGraphql } from 'react-icons/si';
+import { FaBrain, FaRobot, FaCode, FaCloud, FaDatabase, FaFlask } from 'react-icons/fa';
 
 const MovingTicker = () => {
   const announcements = [
-    { icon: <FaGraduationCap />, text: "🚀 New Batch Starting: AI & ML Data Science" },
-    { icon: <FaLaptopCode />, text: "💼 100% Placement Assistance!" },
-    { icon: <FaCloud />, text: "☁️ Cloud Computing & DevOps" },
-    { icon: <SiGraphql />, text: "⚡ Full Stack Mastery Workshop" },
-    { icon: <FaUsers />, text: "🎓 Alumni Network: 500+ Placed in Top MNCs" },
-    { icon: <FaBriefcase />, text: "🏢 Interview Preparation Bootcamp - Starts Every Monday" },
+    { icon: <FaRobot />, text: "🤖 Researching & building the latest AI agents" },
+    { icon: <FaBrain />, text: "🧠 LLM & Generative AI applications, end to end" },
+    { icon: <FaFlask />, text: "🔬 Applied AI R&D — from prototype to production" },
+    { icon: <FaCode />, text: "🌍 Serving clients across Europe, UK & Canada" },
+    { icon: <FaDatabase />, text: "📊 Data engineering & MLOps pipelines" },
+    { icon: <FaCloud />, text: "☁️ Cloud-native, scalable AI infrastructure" },
   ];
 
   return (

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaTwitter, FaLinkedin, FaYoutube, FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -8,16 +8,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
-              FutureMinds AI
+              FutureMinds AI Labs
             </h3>
             <p className="text-gray-400 mb-4">
-              Empowering careers with cutting-edge AI, Machine Learning, Data Science, Full Stack, MERN & MEAN and Cloud technologies.
-              100% placement assistance guaranteed.
+              An applied AI consulting & R&D lab. We design, build, and ship production-grade
+              Generative AI, Agentic AI, and full-stack systems for clients across Europe,
+              the UK, and Canada.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition">
-                <FaFacebook size={20} />
-              </a>
               <a href="#" className="text-gray-400 hover:text-primary-400 transition">
                 <FaTwitter size={20} />
               </a>
@@ -25,42 +23,42 @@ const Footer = () => {
                 <FaLinkedin size={20} />
               </a>
               <a href="#" className="text-gray-400 hover:text-primary-400 transition">
-                <FaYoutube size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition">
                 <FaGithub size={20} />
+              </a>
+              <a href="mailto:info@futuremindsailabs.com" className="text-gray-400 hover:text-primary-400 transition">
+                <FaEnvelope size={20} />
               </a>
             </div>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-white">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Company</h4>
             <ul className="space-y-2">
               <li><Link to="/" className="text-gray-400 hover:text-primary-400 transition">Home</Link></li>
-              <li><Link to="/courses" className="text-gray-400 hover:text-primary-400 transition">Courses</Link></li>
-              <li><Link to="/placement" className="text-gray-400 hover:text-primary-400 transition">Placement</Link></li>
-              <li><Link to="/about" className="text-gray-400 hover:text-primary-400 transition">About Us</Link></li>
+              <li><Link to="/services" className="text-gray-400 hover:text-primary-400 transition">Services</Link></li>
+              <li><Link to="/work" className="text-gray-400 hover:text-primary-400 transition">Work</Link></li>
+              <li><Link to="/about" className="text-gray-400 hover:text-primary-400 transition">About</Link></li>
               <li><Link to="/contact" className="text-gray-400 hover:text-primary-400 transition">Contact</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-white">Popular Courses</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Capabilities</h4>
             <ul className="space-y-2">
-              <li className="text-gray-400 hover:text-primary-400 transition">Full Stack AI</li>
-              <li className="text-gray-400 hover:text-primary-400 transition">Azure DevOps</li>
-              <li className="text-gray-400 hover:text-primary-400 transition">GraphQL Mastery</li>
-              <li className="text-gray-400 hover:text-primary-400 transition">Cloud Computing</li>
-              <li className="text-gray-400 hover:text-primary-400 transition">Machine Learning</li>
+              <li className="text-gray-400">Generative AI & LLM Apps</li>
+              <li className="text-gray-400">Agentic AI & Automation</li>
+              <li className="text-gray-400">Full-Stack Engineering</li>
+              <li className="text-gray-400">Data Engineering & MLOps</li>
+              <li className="text-gray-400">Cloud & Platform</li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white">Get In Touch</h4>
             <ul className="space-y-3">
-              <li className="flex items-center space-x-3 text-gray-400">
-                <FaMapMarkerAlt className="text-primary-400" />
-                <span>Marathahalli, Bangalore, India</span>
+              <li className="flex items-start space-x-3 text-gray-400">
+                <FaMapMarkerAlt className="text-primary-400 mt-1 flex-shrink-0" />
+                <span>1st Floor, Khatta No 42/2-3, Munnekolala, Varthur Hobli, Bengaluru, Karnataka 560037</span>
               </li>
               <li className="flex items-center space-x-3 text-gray-400">
                 <FaPhone className="text-primary-400" />
@@ -77,7 +75,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
             © {new Date().getFullYear()} FutureMinds AI Labs. All rights reserved. |
-            Training & Placement Division
+            Applied AI Consulting & R&D
           </p>
         </div>
       </div>

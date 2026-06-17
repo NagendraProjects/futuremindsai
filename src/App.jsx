@@ -3,10 +3,10 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import MovingTicker from './components/MovingTicker';
 import Home from './pages/Home';
-import Courses from './pages/Courses';
-import Contact from './pages/Contact';
+import Services from './pages/Services';
+import Work from './pages/Work';
 import About from './pages/About';
-import Placement from './pages/Placement';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -17,10 +17,10 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/courses" element={<Courses />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/work" element={<Work />} />
             <Route path="/about" element={<About />} />
-            <Route path="/placement" element={<Placement />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
